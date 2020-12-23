@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/lib-web.iml" filepath="$PROJECT_DIR$/lib-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib-web-api/lib-web-api.iml" filepath="$PROJECT_DIR$/lib-web-api/lib-web-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib-web-dao/lib-web-dao.iml" filepath="$PROJECT_DIR$/lib-web-dao/lib-web-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib-web-manager/lib-web-manager.iml" filepath="$PROJECT_DIR$/lib-web-manager/lib-web-manager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib-web-service/lib-web-service.iml" filepath="$PROJECT_DIR$/lib-web-service/lib-web-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib-web-web/lib-web-web.iml" filepath="$PROJECT_DIR$/lib-web-web/lib-web-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/start/start.iml" filepath="$PROJECT_DIR$/start/start.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="lib-web-api" />
+        <module name="start" />
+        <module name="lib-web-service" />
+        <module name="lib-web-dao" />
+        <module name="lib-web-manager" />
+        <module name="lib-web-web" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="lib-web" target="1.8" />
+      <module name="lib-web-api" target="1.8" />
+      <module name="lib-web-dao" target="1.8" />
+      <module name="lib-web-manager" target="1.8" />
+      <module name="lib-web-service" target="1.8" />
+      <module name="lib-web-web" target="1.8" />
+      <module name="start" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
