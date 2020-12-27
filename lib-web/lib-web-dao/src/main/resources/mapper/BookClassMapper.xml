@@ -2,7 +2,7 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.example.libweb.dao.mapper.BookClassMapper">
+<mapper namespace="com.example.libweb.dao.mapper.book.BookClassMapper">
 
     <resultMap id="BookClassDTO" type="com.example.libweb.api.model.book.BookClassDTO">
         <id column="book_class_id" property="bookClassId"/>
@@ -26,10 +26,10 @@
         update t_book_class set book_class_name =#{bookClassName},valid_flag=#{validFlag},update_date=now() where book_class_id=#{bookClassId}
 
     </update>
-    <delete id="delete" parameterType="int">
+    <delete id="delete" parameterType="Integer">
         delete  from t_book_class where book_class_id=#{bookClassId}
     </delete>
-    <select id="findByBookId" resultMap="BookClassDTO" parameterType="int">
+    <select id="findByBookId" resultMap="BookClassDTO" parameterType="Integer">
         select
         <include refid="base-column"/>
          from t_book_class where book_class_id=#{bookClassId}

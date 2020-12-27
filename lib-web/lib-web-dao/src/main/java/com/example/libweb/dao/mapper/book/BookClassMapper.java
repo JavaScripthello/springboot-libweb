@@ -1,4 +1,4 @@
-package com.example.libweb.dao.mapper;
+package com.example.libweb.dao.mapper.book;
 
 import com.example.libweb.api.model.book.BookClassDTO;
 import com.example.libweb.api.model.constants.ResultDTO;
@@ -35,12 +35,12 @@ public interface BookClassMapper {
      * @param bookClassId 书籍编号
      * @return 返回删除行数
      */
-    int delete(int bookClassId);
+    int delete(Integer bookClassId);
 
     /**
      * 根据书籍id查询书
      * @param bookClassId 书籍编号
      * @return 返回查找到书籍或者是null
      */
-    BookClassDTO findByBookId(int bookClassId);
+    BookClassDTO findByBookId(Integer bookClassId);
 }
