@@ -2,47 +2,48 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="97e94f82-bf26-47a4-ac69-b295cce25e02" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/$CACHE_FILE$" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HELP.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib-web-api/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib-web-api/src/main/java/com/example/libweb/api/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib-web-api/src/main/java/com/example/libweb/api/model/UserModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib-web-dao/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib-web-dao/src/main/java/com/example/libweb/dao/dataobject/UserDO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib-web-dao/src/main/java/com/example/libweb/dao/mapper/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib-web-dao/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib-web-manager/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib-web-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib-web-service/src/main/java/com/example/libweb/service/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib-web-web/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib-web-web/src/main/java/com/example/libweb/web/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/start/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/start/src/main/java/com/example/libweb/LibWebApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/start/src/main/java/com/example/libweb/demos/mybatis/config/MybatisDemoConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/start/src/main/java/com/example/libweb/demos/mybatis/controller/MybatisDemoUserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/start/src/main/java/com/example/libweb/demos/mybatis/entity/MybatisDemoUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/start/src/main/java/com/example/libweb/demos/mybatis/mapper/MybatisDemoUserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/start/src/main/java/com/example/libweb/demos/web/BasicController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/start/src/main/java/com/example/libweb/demos/web/PathVariableController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/start/src/main/java/com/example/libweb/demos/web/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/start/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/start/src/main/resources/data.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/start/src/main/resources/init.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/start/src/main/resources/mapper/MybatisDemoUserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/start/src/main/resources/schema.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/start/src/main/resources/static/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/start/src/test/java/com/example/libweb/LibWebApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib-web-api/src/main/java/com/example/libweb/api/model/constants/ResultDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib-web-api/src/main/java/com/example/libweb/api/model/enums/HTTPCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib-web-api/src/main/java/com/example/libweb/api/model/enums/ValidFlagEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib-web-api/src/main/java/com/example/libweb/api/model/service/book/BookClassService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib-web-dao/src/main/java/com/example/libweb/dao/mapper/BookClassMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib-web-dao/src/main/resources/mapper/BookClassMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib-web-service/src/main/java/com/example/libweb/service/book/BookClassServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib-web-web/src/main/java/com/example/libweb/web/book/BookClassController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/start/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_unknown.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib-web-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lib-web-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib-web-api/src/main/java/com/example/libweb/api/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib-web-api/src/main/java/com/example/libweb/api/model/BaseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib-web-api/src/main/java/com/example/libweb/api/model/BaseDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib-web-api/src/main/java/com/example/libweb/api/model/UserModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib-web-api/src/main/java/com/example/libweb/api/model/book/BookClassDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib-web-api/src/main/java/com/example/libweb/api/model/book/BookClassDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib-web-api/src/main/java/com/example/libweb/api/model/book/BookDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib-web-api/src/main/java/com/example/libweb/api/model/book/BookDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib-web-api/src/main/java/com/example/libweb/api/model/enues/ValidFlagEnue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib-web-dao/lib-web-dao.iml" beforeDir="false" afterPath="$PROJECT_DIR$/lib-web-dao/lib-web-dao.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib-web-dao/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lib-web-dao/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib-web-dao/src/main/java/com/example/libweb/dao/dataobject/UserDO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib-web-dao/src/main/java/com/example/libweb/dao/mapper/UserMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib-web-dao/src/main/resources/mapper/UserMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib-web-service/src/main/java/com/example/libweb/service/UserServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib-web-web/lib-web-web.iml" beforeDir="false" afterPath="$PROJECT_DIR$/lib-web-web/lib-web-web.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib-web-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lib-web-web/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib-web-web/src/main/java/com/example/libweb/web/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/start/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/start/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/start/src/main/java/com/example/libweb/demos/mybatis/config/MybatisDemoConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/start/src/main/java/com/example/libweb/demos/mybatis/controller/MybatisDemoUserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/start/src/main/java/com/example/libweb/demos/mybatis/entity/MybatisDemoUser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/start/src/main/java/com/example/libweb/demos/mybatis/mapper/MybatisDemoUserMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/start/src/main/java/com/example/libweb/demos/web/BasicController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/start/src/main/java/com/example/libweb/demos/web/PathVariableController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/start/src/main/java/com/example/libweb/demos/web/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/start/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/start/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/start/src/main/resources/data.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/start/src/main/resources/init.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/start/src/main/resources/mapper/MybatisDemoUserMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/start/src/main/resources/schema.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/start/src/main/resources/static/index.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +52,16 @@
   </component>
   <component name="CompilerWorkspaceConfiguration">
     <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="Enum" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -63,6 +74,8 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
+        <option name="localRepository" value="D:\repository" />
+        <option name="mavenHome" value="D:/apache-maven-3.5.4" />
         <option name="userSettingsFile" value="D:\apache-maven-3.5.4\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
@@ -80,14 +93,18 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib-web-api/src/main/java/com/example/libweb/api/model" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Test1/springboot-layui" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RunManager">
     <configuration name="LibWebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
@@ -124,6 +141,16 @@
       <workItem from="1608733543980" duration="85000" />
       <workItem from="1608733632876" duration="115000" />
       <workItem from="1608733751855" duration="404000" />
+      <workItem from="1608904943937" duration="1672000" />
+      <workItem from="1608906642659" duration="355000" />
+      <workItem from="1608907002810" duration="944000" />
+      <workItem from="1608907951261" duration="609000" />
+      <workItem from="1608950486560" duration="1855000" />
+      <workItem from="1608964003905" duration="12025000" />
+      <workItem from="1608985757884" duration="624000" />
+      <workItem from="1608990795190" duration="24000" />
+      <workItem from="1609055889381" duration="4264000" />
+      <workItem from="1609060171611" duration="227000" />
     </task>
     <servers />
   </component>
@@ -131,17 +158,139 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="906" y="194" key="#com.intellij.ide.util.MemberChooser" timestamp="1609058659674">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="906" y="194" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1609058659674" />
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1609059859334">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1609059859334" />
+    <state x="722" y="5" key="#toString()_Generation_Settings" timestamp="1609058658100">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="722" y="5" key="#toString()_Generation_Settings/0.0.1536.824@0.0.1536.824" timestamp="1609058658100" />
     <state x="266" y="6" key="CommitChangelistDialog2" timestamp="1608734265484">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="266" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1608734265484" />
-    <state x="270" y="0" key="SettingsEditor" timestamp="1608734139935">
+    <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1608967875818">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="270" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1608734139935" />
+    <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1608967875818" />
+    <state width="1335" height="210" key="GridCell.Tab.0.bottom" timestamp="1609060363686">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1335" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1609060363686" />
+    <state width="1335" height="210" key="GridCell.Tab.0.center" timestamp="1609060363686">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1335" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1609060363686" />
+    <state width="1335" height="210" key="GridCell.Tab.0.left" timestamp="1609060363686">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1335" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1609060363686" />
+    <state width="1335" height="210" key="GridCell.Tab.0.right" timestamp="1609060363686">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1335" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1609060363686" />
+    <state width="1335" height="210" key="GridCell.Tab.1.bottom" timestamp="1609060363687">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1335" height="210" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1609060363687" />
+    <state width="1335" height="210" key="GridCell.Tab.1.center" timestamp="1609060363686">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1335" height="210" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1609060363686" />
+    <state width="1335" height="210" key="GridCell.Tab.1.left" timestamp="1609060363686">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1335" height="210" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1609060363686" />
+    <state width="1335" height="210" key="GridCell.Tab.1.right" timestamp="1609060363686">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1335" height="210" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1609060363686" />
+    <state width="746" height="261" key="GridCell.Tab.2.bottom" timestamp="1608981547366">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="746" height="261" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1608981547366" />
+    <state width="746" height="261" key="GridCell.Tab.2.center" timestamp="1608981547366">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="746" height="261" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1608981547366" />
+    <state width="746" height="261" key="GridCell.Tab.2.left" timestamp="1608981547365">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="746" height="261" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1608981547365" />
+    <state width="746" height="261" key="GridCell.Tab.2.right" timestamp="1608981547366">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="746" height="261" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1608981547366" />
+    <state x="299" y="68" key="Maven.ArtifactSearchDialog" timestamp="1608906724971">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="299" y="68" key="Maven.ArtifactSearchDialog/0.0.1536.824@0.0.1536.824" timestamp="1608906724971" />
+    <state x="270" y="0" key="SettingsEditor" timestamp="1608906627141">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="270" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1608906627141" />
     <state x="361" y="134" key="Vcs.Push.Dialog.v2" timestamp="1608734272413">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="134" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1608734272413" />
+    <state x="449" y="237" key="com.intellij.ide.util.TipDialog" timestamp="1608990802427">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="449" y="237" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1608990802427" />
+    <state x="321" y="149" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1608972764490">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="321" y="149" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1536.824@0.0.1536.824" timestamp="1608972764490" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1608967061351">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1608967061351" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/lib-web-web/src/main/java/com/example/libweb/web/book/BookClassController.java</url>
+          <line>92</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/lib-web-service/src/main/java/com/example/libweb/service/book/BookClassServiceImpl.java</url>
+          <line>117</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/lib-web-service/src/main/java/com/example/libweb/service/book/BookClassServiceImpl.java</url>
+          <line>147</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/lib-web-service/src/main/java/com/example/libweb/service/book/BookClassServiceImpl.java</url>
+          <line>144</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/lib-web-api/src/main/java/com/example/libweb/api/model/service/book/BookClassService.java</url>
+          <line>40</line>
+          <properties class="com.example.libweb.api.model.service.book.BookClassService" method="findByBookId">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/lib-web-dao/src/main/java/com/example/libweb/dao/mapper/BookClassMapper.java</url>
+          <line>44</line>
+          <properties class="com.example.libweb.dao.mapper.BookClassMapper" method="findByBookId">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

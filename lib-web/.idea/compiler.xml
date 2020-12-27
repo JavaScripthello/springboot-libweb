@@ -11,8 +11,13 @@
         <module name="start" />
         <module name="lib-web-service" />
         <module name="lib-web-dao" />
-        <module name="lib-web-manager" />
         <module name="lib-web-web" />
+      </profile>
+      <profile name="Annotation profile for lib-web" enabled="true">
+        <sourceOutputDir name="../target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="lib-web-manager" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
