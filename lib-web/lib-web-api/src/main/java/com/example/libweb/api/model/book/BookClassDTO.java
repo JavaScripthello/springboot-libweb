@@ -14,12 +14,11 @@ public class BookClassDTO extends  BookDTO implements Serializable {
     /**
      * 书籍分类id
      */
-    public int bookClassId;
+    public Integer bookClassId;
     /**
      * 分类名称
      */
     private String bookClassName;
-
 
     @Override
     public String toString() {
@@ -28,6 +27,4 @@ public class BookClassDTO extends  BookDTO implements Serializable {
                 ", bookClassName='" + bookClassName + '\'' +
                 '}';
     }
-
-
 }

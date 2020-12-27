@@ -1,15 +1,19 @@
 package com.example.libweb.api.model.book;
 
 import com.example.libweb.api.model.BaseDTO;
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
-import java.util.Date;
+import java.sql.Date;
 
 /**
  * 书籍实体类
  */
+@EqualsAndHashCode(callSuper = true)
 @Data
 public class BookDTO extends BaseDTO implements Serializable {
 
@@ -17,7 +21,7 @@ public class BookDTO extends BaseDTO implements Serializable {
     /**
      * 书籍id
      */
-    private int bookId;
+    private Integer bookId;
     /**
      * 书籍名称
      */
@@ -42,9 +46,14 @@ public class BookDTO extends BaseDTO implements Serializable {
     /**
      * 出版时间
      */
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    @JsonFormat(pattern = "yyyy-MM-dd")
     private Date publishDate;
 
-   // private BookClassDTO bookClassDTO;
+    /**
+     * 书籍分类id
+     */
+    private Integer bookClassId;
 
     @Override
     public String toString() {
@@ -56,6 +65,7 @@ public class BookDTO extends BaseDTO implements Serializable {
                 ", bookPublish='" + bookPublish + '\'' +
                 ", bookImg='" + bookImg + '\'' +
                 ", publishDate=" + publishDate +
+                ", bookClassId=" + bookClassId +
                 '}';
     }
 }

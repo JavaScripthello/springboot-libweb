@@ -3,7 +3,6 @@ package com.example.libweb.api.model;
 import com.example.libweb.api.model.enums.ValidFlagEnum;
 import lombok.Data;
 
-import java.security.PrivateKey;
 import java.util.Date;
 
 /**
