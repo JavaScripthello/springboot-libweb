@@ -1,6 +1,6 @@
 package com.example.libweb.api.model;
 
-import com.example.demo.api.model.enues.ValidFlagEnue;
+import com.example.libweb.api.model.enums.ValidFlagEnum;
 import lombok.Data;
 
 import java.security.PrivateKey;
@@ -32,5 +32,8 @@ public class BaseDTO {
     /**
      * 数据的合法性
      */
-    private ValidFlagEnue validFlag;
+
+    private ValidFlagEnum validFlag;
+
+
 }

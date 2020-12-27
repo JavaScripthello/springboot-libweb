@@ -20,4 +20,14 @@ public class BookClassDTO extends  BookDTO implements Serializable {
      */
     private String bookClassName;
 
+
+    @Override
+    public String toString() {
+        return "BookClassDTO{" +
+                "bookClassId=" + bookClassId +
+                ", bookClassName='" + bookClassName + '\'' +
+                '}';
+    }
+
+
 }

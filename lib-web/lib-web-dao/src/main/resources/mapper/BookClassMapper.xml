@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.libweb.dao.mapper.BookClassMapper">
+
+    <resultMap id="BookClassDTO" type="com.example.libweb.api.model.book.BookClassDTO">
+        <id column="book_class_id" property="bookClassId"/>
+        <result column="book_class_name" property="bookClassName"/>
+        <result column="create_date" property="createDate"/>
+        <result column="update_date" property="updateDate"/>
+        <result column="valid_flag" property="validFlag"/>
+
+    </resultMap>
+    <sql id="base-column">
+        book_class_id,tmp1,tmp2,book_class_name,create_date,update_date,valid_flag</sql>
+    <select id="findListByName" resultMap="BookClassDTO"  >
+            SELECT
+            <include refid="base-column"/>
+             FROM  t_book_class where  book_class_name like  '%${bookClassName}%'  and valid_flag='ENABLE'
+                 </select>
+    <insert id="insert" parameterType="BookClassDTO">
+        insert  into t_book_class(book_class_name,create_date,update_date,valid_flag) values(#{bookClassName},NOW(),NOW(),#{validFlag})
+    </insert>
+    <update id="update">
+        update t_book_class set book_class_name =#{bookClassName},valid_flag=#{validFlag},update_date=now() where book_class_id=#{bookClassId}
+
+    </update>
+    <delete id="delete" parameterType="int">
+        delete  from t_book_class where book_class_id=#{bookClassId}
+    </delete>
+    <select id="findByBookId" resultMap="BookClassDTO" parameterType="int">
+        select
+        <include refid="base-column"/>
+         from t_book_class where book_class_id=#{bookClassId}
+    </select>
+</mapper>

@@ -1,6 +1,6 @@
 package com.example.libweb.api.model.book;
 
-import com.example.demo.api.model.BaseDTO;
+import com.example.libweb.api.model.BaseDTO;
 import lombok.Data;
 
 import java.io.Serializable;
@@ -44,5 +44,18 @@ public class BookDTO extends BaseDTO implements Serializable {
      */
     private Date publishDate;
 
-    private BookClassDTO bookClassDTO;
+   // private BookClassDTO bookClassDTO;
+
+    @Override
+    public String toString() {
+        return "BookDTO{" +
+                "bookId=" + bookId +
+                ", bookName='" + bookName + '\'' +
+                ", bookPrice=" + bookPrice +
+                ", bookAuthor='" + bookAuthor + '\'' +
+                ", bookPublish='" + bookPublish + '\'' +
+                ", bookImg='" + bookImg + '\'' +
+                ", publishDate=" + publishDate +
+                '}';
+    }
 }
