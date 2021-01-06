@@ -14,6 +14,10 @@ import org.springframework.util.StringUtils;
 
 import java.util.List;
 
+/**
+ * 书籍业务处理实现类
+ * @author kangwei
+ */
 @Service
 public class BookServiceImpl implements BookService {
 

@@ -3,6 +3,10 @@ package com.example.libweb.api.model.service.book;
 import com.example.libweb.api.model.book.BookClassDTO;
 import com.example.libweb.api.model.constants.ResultDTO;
 
+/**
+ * 书籍分类处理接口
+ * @author kangwei
+ */
 public interface BookClassService {
 
     /**

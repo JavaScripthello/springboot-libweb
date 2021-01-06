@@ -12,6 +12,7 @@ import java.sql.Date;
 
 /**
  * 书籍实体类
+ * @author kangwei
  */
 @EqualsAndHashCode(callSuper = true)
 @Data
