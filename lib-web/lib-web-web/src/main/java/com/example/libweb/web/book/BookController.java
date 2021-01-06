@@ -11,6 +11,10 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+/**
+ * 书籍控制层
+ * @author kangwei
+ */
 @RestController
 @RequestMapping("/book")
 public class BookController {

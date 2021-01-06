@@ -6,7 +6,8 @@ import lombok.Data;
 import java.util.Date;
 
 /**
- *
+ *通用实体类
+ * @author kangwei
  */
 @Data
 public class BaseDTO {

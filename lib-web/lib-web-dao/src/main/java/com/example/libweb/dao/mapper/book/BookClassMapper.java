@@ -6,6 +6,10 @@ import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
 
+/**
+ * 书籍分类接口
+ * @author kangwei
+ */
 @Mapper
 public interface BookClassMapper {
 

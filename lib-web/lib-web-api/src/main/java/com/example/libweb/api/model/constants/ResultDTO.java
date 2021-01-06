@@ -2,6 +2,10 @@ package com.example.libweb.api.model.constants;
 
 import lombok.Data;
 
+/**
+ * 结果集实体类
+ * @author kangwei
+ */
 @Data
 public class   ResultDTO {
 

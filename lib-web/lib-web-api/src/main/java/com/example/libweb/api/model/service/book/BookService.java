@@ -5,6 +5,10 @@ import com.example.libweb.api.model.constants.ResultDTO;
 
 import java.util.List;
 
+/**
+ * 书籍处理接口
+ * @author kangwei
+ */
 public interface BookService {
 
     /**

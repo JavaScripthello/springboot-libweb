@@ -4,8 +4,10 @@ import lombok.Data;
 
 import java.io.Serializable;
 
+
 /**
- *
+ * 书籍分类实体类
+ * @author kangwei
  */
 @Data
 public class BookClassDTO extends  BookDTO implements Serializable {

@@ -1,5 +1,10 @@
 package com.example.libweb.api.model.enums;
 
+/**
+ * 状态枚举类
+ * @author kangwei
+ */
+
 public enum  HTTPCode {
 
 
