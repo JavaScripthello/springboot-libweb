@@ -2,7 +2,7 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.example.libweb.dao.mapper.borrow.BookBorrowMapper">
+<mapper namespace="com.example.libweb.dao.mapper.borrow.BookBorrowsMapper">
     <resultMap id="BookBorrowDTO" type="com.example.libweb.api.model.borrow.BookBorrowDTO">
         <id column="borrow_id" property="bookId"/>
         <result column="user_id" property="userId"/>
@@ -18,15 +18,13 @@
         <result column="update_date" property="updateDate"/>
         <result column="valid_flag" property="validFlag"/>
     </resultMap>
-
-        <!--
-        <sql id="base-column">
-                    borrow_id,user_id,user_name,book_id,tmp1,tmp2,book_name,borrow_price,borrow_count,trade_fee,start_date,
-                    end_date,create_date,update_date,valid_flag</sql>
-                     -->
-
-
-
-
+    <sql id="base-column">
+        borrow_id,user_id,user_name,book_id,book_name,borrow_count,borrow_price,trade_fee
+        start_date,end_date,create_date,update_date,valid_flag
+    </sql>
+    <insert id="insertBorrow">
+        insert  into t_borrow(user_id,user_name,book_id,book_name,borrow_count,borrow_price,trade_fee,start_date,end_date,create_date,valid_flag)
+        values (#{userId},#{userName},#{bookId},#{bookName},#{borrowCount},#{bookPrice},#{tradeFee},#{startDate},#{endDate},#{createDate},#{validFlag})
+    </insert>
 
 </mapper>
