@@ -10,7 +10,6 @@
         <result column="create_date" property="createDate"/>
         <result column="update_date" property="updateDate"/>
         <result column="valid_flag" property="validFlag"/>
-
     </resultMap>
     <sql id="base-column">
         book_class_id,tmp1,tmp2,book_class_name,create_date,update_date,valid_flag</sql>
@@ -24,7 +23,6 @@
     </insert>
     <update id="update">
         update t_book_class set book_class_name =#{bookClassName},valid_flag=#{validFlag},update_date=now() where book_class_id=#{bookClassId}
-
     </update>
     <delete id="delete" parameterType="Integer">
         delete  from t_book_class where book_class_id=#{bookClassId}

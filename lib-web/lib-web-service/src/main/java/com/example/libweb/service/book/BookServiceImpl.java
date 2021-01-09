@@ -21,7 +21,7 @@ import java.util.List;
 @Service
 public class BookServiceImpl implements BookService {
 
-    //注入mapper接口
+
     @Autowired(required = false)
     private BookMapper bookMapper;
 
@@ -54,7 +54,7 @@ public class BookServiceImpl implements BookService {
     @Override
     public ResultDTO findBookById(Integer bookId) {
         logger.info("入参"+bookId);
-        if (00==bookId){
+        if (0==bookId){
             return  new ResultDTO(HTTPCode.FAIL.getCode(),"书籍名称不能为0");
         }
         BookDTO bookDTO = bookMapper.findBookById(bookId);

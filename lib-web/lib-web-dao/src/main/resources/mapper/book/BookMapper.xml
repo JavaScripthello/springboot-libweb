@@ -12,6 +12,7 @@
         <result column="book_publish" property="bookPublish"/>
         <result column="publish_date" property="publishDate"/>
         <result column="book_img" property="bookImg"/>
+        <result column="book_count" property="bookCount"/>
         <result column="book_class_id" property="bookClassId"/>
         <result column="create_date" property="createDate"/>
         <result column="update_date" property="updateDate"/>
@@ -20,7 +21,7 @@
     </resultMap>
     <sql id="base-column">
         book_id,tmp1,tmp2,book_name,book_price,book_author,book_publish,publish_date,
-        book_img,book_class_id,create_date,update_date,valid_flag</sql>
+        book_img,book_count,book_class_id,create_date,update_date,valid_flag</sql>
     <select id="findListBookByName" resultMap="BookDTO"  >
         SELECT
         <include refid="base-column"/>
@@ -31,8 +32,23 @@
         publish_date,book_img,book_class_id,create_date,update_date,valid_flag) values
         (#{bookName},#{bookPrice},#{bookAuthor},#{bookPublish},#{publishDate},#{bookImg},#{bookClassId},NOW(),NOW(),#{validFlag})
     </insert>
-    <update id="updateBook">
-        update t_book set book_name =#{bookName},valid_flag=#{validFlag},update_date=now() where book_id=#{bookId}
+    <update id="updateBook" >
+        update t_book <set>
+            <if test="bookName !=null ">
+                book_name =#{bookName},
+            </if>
+            <if test="updateDate">
+                update_date=#{updateDate},
+            </if>
+            <if test="validFlag">
+                valid_flag=#{validFlag},
+            </if>
+        </set>
+            <where>
+                <if test="bookId">
+                    book_id=#{bookId}
+                </if>
+            </where>
 
     </update>
     <delete id="deleteBook" parameterType="Integer">

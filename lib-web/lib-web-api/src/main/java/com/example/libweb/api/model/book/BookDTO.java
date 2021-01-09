@@ -38,12 +38,17 @@ public class BookDTO extends BaseDTO implements Serializable {
     /**
      * 书籍出版社
      */
-    public String bookPublish;
+    private String bookPublish;
     /**
      * 书籍图片
      */
-    public String bookImg;
+    private String bookImg;
 
+    /**
+     * 书籍数量
+     */
+
+    private  Integer bookCount;
     /**
      * 出版时间
      */
@@ -65,6 +70,7 @@ public class BookDTO extends BaseDTO implements Serializable {
                 ", bookAuthor='" + bookAuthor + '\'' +
                 ", bookPublish='" + bookPublish + '\'' +
                 ", bookImg='" + bookImg + '\'' +
+                ", bookCount=" + bookCount +
                 ", publishDate=" + publishDate +
                 ", bookClassId=" + bookClassId +
                 '}';
