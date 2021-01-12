@@ -37,11 +37,14 @@
             <if test="bookName !=null ">
                 book_name =#{bookName},
             </if>
-            <if test="updateDate">
+            <if test="updateDate !=null">
                 update_date=#{updateDate},
             </if>
-            <if test="validFlag">
+            <if test="validFlag !=null">
                 valid_flag=#{validFlag},
+            </if>
+            <if test="bookCount">
+                book_count =#{bookCount}
             </if>
         </set>
             <where>

@@ -40,7 +40,8 @@ public class BookBorrowDTO extends BaseDTO {
     /**
      * 借书价格
      */
-    private  BigDecimal bookPrice;
+    private  BigDecimal borrowPrice;
+
     /**
      * 借书开始时间
      */

@@ -4,27 +4,53 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.example.libweb.dao.mapper.borrow.BookBorrowsMapper">
     <resultMap id="BookBorrowDTO" type="com.example.libweb.api.model.borrow.BookBorrowDTO">
-        <id column="borrow_id" property="bookId"/>
+        <id column="borrow_id" property="borrowId"/>
         <result column="user_id" property="userId"/>
         <result column="user_name" property="userName"/>
         <result column="book_id" property="bookId"/>
         <result column="book_name" property="bookName"/>
-        <result column="borrow_count" property="bookCount"/>
-        <result column="borrow_price" property="bookPrice"/>
-        <result column="trade_fee" property="tradeFee"/>
+        <result column="borrow_count" property="borrowCount"/>
+        <result column="borrow_price" property="borrowPrice"/>
         <result column="start_date" property="startDate"/>
         <result column="end_date" property="endDate"/>
+        <result column="trade_fee" property="tradeFee"/>
         <result column="create_date" property="createDate"/>
         <result column="update_date" property="updateDate"/>
         <result column="valid_flag" property="validFlag"/>
+        <result column="tmp1" property="tmp2"/>
+        <result column="tmp2" property="tmp2"/>
     </resultMap>
     <sql id="base-column">
-        borrow_id,user_id,user_name,book_id,book_name,borrow_count,borrow_price,trade_fee
-        start_date,end_date,create_date,update_date,valid_flag
+        borrow_id,user_id,user_name,book_id,book_name,borrow_count,borrow_price,start_date,end_date,trade_fee,create_date,update_date,valid_flag,tmp1,tmp2
     </sql>
+    <select id="findBorrowBookInfo" resultMap="BookBorrowDTO">
+        select <include refid="base-column" />
+        from t_borrow where book_id =#{bookId}
+    </select>
     <insert id="insertBorrow">
         insert  into t_borrow(user_id,user_name,book_id,book_name,borrow_count,borrow_price,trade_fee,start_date,end_date,create_date,valid_flag)
         values (#{userId},#{userName},#{bookId},#{bookName},#{borrowCount},#{bookPrice},#{tradeFee},#{startDate},#{endDate},#{createDate},#{validFlag})
     </insert>
-
+    <update id="updateBookBorrow">
+        update t_borrow
+        <set>
+            <if test="borrowCount != null">
+                borrow_count = #{borrowCount},
+            </if>
+            <if test=" validFlag !=null">
+                valid_flag =#{validFlag}
+            </if>
+            <if test="tmp1 != null">
+                tmp1 = #{tmp1},
+            </if>
+            <if test="tmp2 !=null ">
+                tmp2 = #{tmp2}
+            </if>
+        </set>
+        <where>
+            <if test="bookId !=null">
+                book_id =#{bookId}
+            </if>
+        </where>
+    </update>
 </mapper>
