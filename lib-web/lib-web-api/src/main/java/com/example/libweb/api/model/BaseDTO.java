@@ -1,7 +1,9 @@
 package com.example.libweb.api.model;
 
 import com.example.libweb.api.model.enums.ValidFlagEnum;
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import java.util.Date;
 
@@ -19,6 +21,8 @@ public class BaseDTO {
     /**
      * 临时字段2
      */
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    @JsonFormat(pattern = "yyyy-MM-dd")
     private  String tmp2;
     /**
      * 入库时间

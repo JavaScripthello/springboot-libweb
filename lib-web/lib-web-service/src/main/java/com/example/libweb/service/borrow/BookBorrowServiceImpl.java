@@ -49,6 +49,11 @@ public class BookBorrowServiceImpl implements BookBorrowService {
         }
         //获取当前书库中书籍数量
         Integer  bookCount = bookDTO.getBookCount();
+        //同一本书只能借数量1，归还之前不能重复借
+        BookBorrowDTO bookBorrowDTO = bookBorrowMapper.findBorrowBookInfo(bookId);
+        if (bookBorrowDTO.getBookId().equals(bookId) && bookBorrowDTO.getValidFlag().equals(ValidFlagEnum.ENABLE) ){
+            return  new  ResultDTO(HTTPCode.FAIL.getCode(),"请勿重复借阅，请当归还书后在借");
+        }
         if (bookCount<=0){
             return  new  ResultDTO(HTTPCode.FAIL.getCode(),"该书籍比较畅销,已经借完");
         }
@@ -87,6 +92,7 @@ public class BookBorrowServiceImpl implements BookBorrowService {
      * @return
      */
     private int  doInsertBorrowRecord(Date startDate, Date endDate, BookDTO bookDTO, String bookName, Integer userId, String userName, boolean vipFlag, Integer borrowCount) {
+
         //计算借书天数
         Long day = (endDate.getTime()-startDate.getTime()) /(24*60*60*1000);
         //借书操作
@@ -112,7 +118,7 @@ public class BookBorrowServiceImpl implements BookBorrowService {
         //计算价格
         BigDecimal bookPrice = bookDTO.getBookPrice();
         //借书价格
-        bookBorrowDTO.setBookPrice(bookPrice);
+        bookBorrowDTO.setBorrowPrice(bookPrice);
         //总价格
         long totalPrice =  bookPrice.intValue() * day;
         if (vipFlag){

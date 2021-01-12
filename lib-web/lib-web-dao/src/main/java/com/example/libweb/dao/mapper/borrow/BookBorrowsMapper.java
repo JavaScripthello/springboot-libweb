@@ -15,4 +15,13 @@ public interface BookBorrowsMapper {
      * @return
      */
      Integer insertBorrow(BookBorrowDTO bookBorrowDTO) ;
+
+    /**
+     * 查找借书书籍信息
+     * @param bookId
+     * @return
+     */
+     BookBorrowDTO findBorrowBookInfo(Integer bookId);
+
+    int updateBookBorrow(BookBorrowDTO localBorrowBook);
 }
